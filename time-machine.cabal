@@ -1,13 +1,17 @@
 name:                time-machine
-version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/time-machine#readme
+version:             0.1.0
+synopsis:            A library to mock the current time.
+description:
+    A library to mock the current time and relevant IO functions
+    by using a type class.
+    You can get the great command of the current time in UTC,
+    time zones, and the speed of time.
+homepage:            https://github.com/y-taka-23/time-machine#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2017 Author name here
+author:              TAKAHASHI Yuto <ytaka23dev@gmail.com>
+maintainer:          TAKAHASHI Yuto <ytaka23dev@gmail.com>
+copyright:           Copyright (C) 2017 TAKAHASHI Yuto
 category:            Control
 build-type:          Simple
 extra-source-files:  README.md
@@ -42,4 +46,4 @@ test-suite spec
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/time-machine
+  location: https://github.com/y-taka-23/time-machine
