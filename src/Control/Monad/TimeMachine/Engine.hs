@@ -43,7 +43,7 @@ newtype TimeScale = TimeScale { unTimeScale :: T.NominalDiffTime }
 -- | A class of monads in which you can obrain the mocked current time
 -- and relevant information.
 class (Monad m) => MonadTime m where
-    getCurrentTime      :: m T.UTCTime -- ^ foo
+    getCurrentTime      :: m T.UTCTime
     getCurrentTZ        :: m TZ.TZ
     getCurrentTimeScale :: m TimeScale
 
