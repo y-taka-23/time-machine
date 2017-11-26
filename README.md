@@ -1,6 +1,9 @@
 time-machine
 ============
 
+[![Build Status](https://travis-ci.org/y-taka-23/time-machine.svg?branch=master)](https://travis-ci.org/y-taka-23/time-machine)
+[![Hackage](https://img.shields.io/hackage/v/time-machine.svg)](https://hackage.haskell.org/package/time-machine)
+
 A library to mock the current time and relevant `IO` functions
 by using a type class.
 
@@ -73,7 +76,8 @@ main = travelTo (3 `days` ago) $ do
     getCurrentTime >>= (liftIO . print)
 ```
 
-For more detail, see the document.
+For more detail,
+see the [document](https://hackage.haskell.org/package/time-machine).
 
 ### Mocking Time Zones
 
