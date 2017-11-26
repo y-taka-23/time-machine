@@ -27,12 +27,6 @@ module Control.Monad.TimeMachine.Engine (
     , TimeMachineT
     ) where
 
-{-
-posix only
-deriving datatypes
-instances
--}
-
 import           Control.Exception    ( IOException, catch )
 import           Control.Monad.Reader ( ReaderT, ask, runReaderT )
 import           Control.Monad.Trans  ( MonadIO, liftIO, MonadTrans )
