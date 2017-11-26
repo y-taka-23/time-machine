@@ -6,6 +6,8 @@ time-machine
 
 A library to mock the current time and relevant `IO` functions
 by using a type class.
+You can get the great command of the current time in UTC,
+time zones, and the speed of time.
 
 ```haskell
 module Main where
