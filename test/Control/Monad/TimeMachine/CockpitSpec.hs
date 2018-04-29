@@ -1,9 +1,9 @@
 module Control.Monad.TimeMachine.CockpitSpec ( spec ) where
 
-import Test.Hspec
-import Test.Hspec.QuickCheck ( prop )
+import           Test.Hspec
+import           Test.Hspec.QuickCheck             (prop)
 
-import Control.Monad.TimeMachine.Cockpit
+import           Control.Monad.TimeMachine.Cockpit
 
 spec :: Spec
 spec = do

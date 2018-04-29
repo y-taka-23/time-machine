@@ -1,14 +1,14 @@
 module Control.Monad.TimeMachine.EngineSpec ( spec ) where
 
-import Test.Hspec
-import Test.HUnit ( Assertion )
+import           Test.Hspec
+import           Test.HUnit                       (Assertion)
 
-import Control.Monad.TimeMachine.Engine
+import           Control.Monad.TimeMachine.Engine
 
-import           Control.Concurrent  ( threadDelay )
-import           Control.Monad.Trans ( MonadIO, liftIO )
-import qualified Data.Time           as T
-import qualified Data.Time.Zones     as TZ
+import           Control.Concurrent               (threadDelay)
+import           Control.Monad.Trans              (MonadIO, liftIO)
+import qualified Data.Time                        as T
+import qualified Data.Time.Zones                  as TZ
 
 spec :: Spec
 spec = do

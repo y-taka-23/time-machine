@@ -18,10 +18,10 @@ module Control.Monad.TimeMachine.Cockpit (
     , x
     ) where
 
-import Control.Monad.TimeMachine.Engine
+import           Control.Monad.TimeMachine.Engine
 
-import qualified Data.Time       as T
-import qualified Data.Time.Zones as TZ
+import qualified Data.Time                        as T
+import qualified Data.Time.Zones                  as TZ
 
 -- | A piese of the DSL to construct 'Absolute' destinations.
 the :: T.UTCTime -> Destination

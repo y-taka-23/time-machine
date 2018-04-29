@@ -27,10 +27,10 @@ module Control.Monad.TimeMachine.Engine (
     , TimeMachineT
     ) where
 
-import           Control.Exception    ( IOException, catch )
-import           Control.Monad.Reader ( ReaderT, ask, runReaderT )
-import           Control.Monad.Trans  ( MonadIO, liftIO, MonadTrans )
-import           Data.Maybe           ( fromMaybe )
+import           Control.Exception    (IOException, catch)
+import           Control.Monad.Reader (ReaderT, ask, runReaderT)
+import           Control.Monad.Trans  (MonadIO, MonadTrans, liftIO)
+import           Data.Maybe           (fromMaybe)
 import qualified Data.Time            as T
 import qualified Data.Time.Zones      as TZ
 
