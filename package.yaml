@@ -1,0 +1,39 @@
+name:               time-machine
+version:            0.1.0
+synopsis:           A library to mock the current time.
+description:
+  A library to mock the current time and relevant IO functions
+  by using a type class.
+  You can get the great command of the current time in UTC,
+  time zones, and the speed of time.
+category:           Control
+author:             'TAKAHASHI Yuto <ytaka23dev@gmail.com>'
+maintainer:         'TAKAHASHI Yuto <ytaka23dev@gmail.com>'
+copyright:          'Copyright (C) 2017 TAKAHASHI Yuto'
+license:            BSD3
+github:             'y-taka-23/time-machine'
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base >= 4.7 && < 5
+- mtl
+- time
+- tz
+
+library:
+  source-dirs:      src
+
+tests:
+  spec:
+    main:           Spec.hs
+    source-dirs:    test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hspec
+    - HUnit
+    - time-machine
